@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Рандомный CS2 конфиг</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <aside id="redirectBanner" class="redirect-banner" aria-label="Переадресация">
+    <button id="redirectBannerClose" class="redirect-banner__close" type="button" aria-label="Закрыть" onclick="this.parentElement.remove(); return false;">×</button>
+    <p class="redirect-banner__title">Есть сайт с рандомными серверами</p>
+    <p class="redirect-banner__text">Перейди на сайт с рандомными CS2 серверами и фильтрами.</p>
+    <a class="redirect-banner__link" href="../SITE/index.html">Перейти на сайт серверов</a>
+  </aside>
+  <main class="layout">
+    <section class="card main-card">
+      <h1>Рандомный CS2 конфиг</h1>
+      <p class="subtitle">Нажми кнопку и сайт сразу сгенерирует и скачает готовый <code>.cfg</code> файл для CS2.</p>
+
+      <div class="controls-row">
+        <button id="generateBtn" class="btn primary">Сгенерировать и скачать .cfg</button>
+      </div>
+
+      <p id="status" class="status">Готово. Нажми кнопку, чтобы скачать конфиг.</p>
+
+      <article class="result-box">
+        <span class="result-label">ПОСЛЕДНИЙ ФАЙЛ</span>
+        <p id="fileInfo" class="file-info">Файл ещё не сгенерирован.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
